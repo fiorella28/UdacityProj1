@@ -1,118 +1,157 @@
-
 @import url(https://fonts.googleapis.com/css?family=Lato:400,100,300);
-@import url(animate.css);
-
-body, div, header, figure, section, h1, h2, h3, h4, {
-	margin:0;
-	padding:0;
-	font-size:16px;
-}
-
-body {
-	font-family:sans-serif;
-}
-
-img {
-	width:100%;
-	height:auto;
-}
-
-#container {
-	width:750px;
-	margin:0 auto;
-}
-
-header {
-	font-family: 'Lato', sans-serif;
-	overflow:hidden;
-	padding:0 0 10px 0;
-	border-bottom:solid 4px #BCBBBB;
-	margin-bottom:25px;
-}
-
-#logo {
-	width:30%;
-	margin: 0;
-	padding: 0;
-}
-
-#logo img {
-	float:left;
-	width:100px;
-}
-
-#header-right {
-	float:right;
-	text-align:right;
-	width:60%;
-	padding-top: 0px;
-	line-height: 10px;
-}
-
-h1, h2, h4 {
-	text-transform: uppercase;
-}
-
-h1 {
-	font-weight:100;
-	font-size: 2.8em;
-}
-
-h2 {
-	font-size: 1.2em;
-	font-weight:300;
-}
-
-h3 {
-	font-size: 1.9em;
-	font-weight:500;
-	color:#ccc;
-	text-indent: 10px;
-	margin-bottom:8px;
-}
-
+body,
+div,
+p,
+h1,
+h2,
+h3,
 h4 {
-	font-size:2em;
-	font-weight:300;
-	color:#666;
-	margin-bottom:5px;
+    margin: 0;
+    padding: 0;
 }
-
+h1,
+h2,
+h4 {
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 3em;
+    font-weight: 300;
+    color: #ccc;
+    margin-bottom: 15px;
+    text-indent: 25px;
+}
+h4 {
+    font-size: 2.5em;
+    font-weight: 300;
+    color: #666;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+#headerImg {
+    padding-top: 10px;
+    width: 125px;
+    height: 125px;
+}
+.row {
+    padding-top: 10px;
+}
+#nameLine1 {
+    padding-top: 30px;
+    text-align: right;
+    color: #666;
+    font-weight: 100;
+    font-size: 3.5em;
+    font-family: 'Lato', sans-serif;
+}
+#nameLine2 {
+    text-align: right;
+    color: #666;
+    font-weight: 300;
+    font-size: 1.5em;
+    /*1.2em*/
+    
+    font-family: 'Lato', sans-serif;
+}
+hr {
+    border: none;
+    height: 4px;
+    color: #BCBBBB;
+    /* support legacy IE */
+    
+    border-bottom: solid 4px #BCBBBB;
+    margin-top: 5px;
+}
+#heroImg {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+}
 p {
-	font-family: 'Lato', sans-serif;
-	font-weight:300;
-	font-size:0.7em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    text-align: center;
 }
-
 p a {
-	color:#999;
-	text-decoration:none;
+    color: #999;
+    text-decoration: none;
 }
-
-p a:hover {
-	color:#666;
+.features {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
-
-.main {
-	margin-bottom:25px;
-}
-
-#features {
-	overflow:hidden;
-	margin-bottom:50px;
-}
-
-.feature {
-	float:left;
-	width:236px;
-	text-align:center;
-	margin-right:20px;
-}
-
-.feature img {
-	margin-bottom:5px;
-}
-
 #feature-3 {
-	margin-right:0;
+    float: right;
+}
+@media all and (max-width: 1200px) {
+    /* screen size until 1000px */
+    
+    h4 {
+        font-size: 1.5em;
+        /* 1.5x default size */
+    }
+    p > a {
+        font-size: 1em;
+        /* 1.5x default size */
+    }
+    h3 {
+        font-size: 3.0em;
+    }
+}
+@media all and (max-width: 1000px) {
+    /* screen size until 600px */
+    
+    h4 {
+        font-size: 1.4em;
+        /* 1.2x default size */
+    }
+    #nameLine1 {
+        font-size: 2.5em;
+    }
+}
+@media all and (max-width: 800px) {
+    h4 {
+        font-size: 1.3em;
+    }
+    p > a {
+        font-size: .8em;
+    }
+    h3 {
+        font-size: 2.0em;
+    }
+    #nameLine1 {
+        font-size: 2em;
+    }
+    #nameLine2 {
+        font-size: 1.2em;
+    }
+}
+@media all and (max-width: 600px) {
+    h4 {
+        font-size: 1.0em;
+    }
+    p > a {
+        font-size: .8em;
+    }
+}
+@media all and (max-width: 400px) {
+    p > a {
+        font-size: 0.5em;
+    }
+    h3 {
+        font-size: 1.0em;
+    }
+    #nameLine1 {
+        font-size: 1.5em
+    }
+    #nameLine2 {
+        font-size: .8em;
+    }
 }
